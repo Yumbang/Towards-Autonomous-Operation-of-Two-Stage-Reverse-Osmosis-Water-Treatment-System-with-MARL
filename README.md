@@ -1,8 +1,8 @@
-# ROMARL: Robust Multi-Agent Reinforcement Learning for Two-Stage Reverse Osmosis (RO) Process Optimization
+# Towards Autonomous Operation of Two-Stage Reverse Osmosis Water Treatment System with Multi-Agent Reinforcement Learning
 
 ## Overview
 
-This repository contains the code for implementing and evaluating robust multi-agent reinforcement learning (ROMARL) algorithms for optimizing the operation of a two-stage reverse osmosis (RO) process. The goal is to develop control policies that can effectively manage the RO process under various operational conditions and disturbances, ensuring stable and efficient performance. Under review for submission to Desalination journal (https://www.sciencedirect.com/journal/desalination).
+This repository contains the code for implementing and evaluating multi-agent reinforcement learning (MARL) algorithms for optimizing the operation of a two-stage reverse osmosis (RO) process. The goal is to develop control policies that can effectively manage the RO process under various operational conditions and disturbances, ensuring stable and efficient performance. Under review for submission to Desalination journal (https://www.sciencedirect.com/journal/desalination).
 
 ## Repository Structure
 
@@ -15,10 +15,9 @@ The repository is organized as follows:
 -   `algorithms/`: Contains implementations of different MARL algorithms.
     -   `mixer/`: Implementation of mixing networks for value function decomposition.
 -   `config/`: Configuration files for running experiments.
-    -   `run_exp_episodic_centralized.sh`: Shell script for running episodic experiments with a centralized control architecture.
-    -   `run_exp_episodic.sh`: Shell script for running episodic experiments with a decentralized control architecture.
-    -   `episodic_conf/`: Configuration files for episodic training.
-    -   `figures/`: Directory to store generated figures and plots.
+    -   `run_exp_episodic_centralized.sh`: Shell script for running experiments with a centralized control architecture.
+    -   `run_exp_episodic.sh`: Shell script for running experiments with a decentralized control architecture.
+    -   `episodic_conf/`: Configuration files for training.
 -   `evaluation/`: Scripts and notebooks for evaluating trained RL agents.
     -   `hinderonegivenperiod.sh`: Shell script for evaluating agent performance when hindering one agent for a given period.
     -   `inspect_evaluation.ipynb`: Jupyter notebook for inspecting and analyzing evaluation results.
@@ -39,7 +38,42 @@ The repository is organized as follows:
 -   Although there is only QMIX.py in algorithms/mixer directory, it contains more functionality than mere 'QMIX' implementation.
     -   ReplayBuffer, PrioritizedReplayBuffer are implemented. It may seem odd, but PrioritizedReplayBuffer was used as main replay buffer, only in UNIFORM mode (same function as vanilla ReplayBuffer). In addition, methods such as loss calculation are implemented in the class.
 
-## Requirements
+## Details about implementation
+
+## Algorithms Used for MARL
+-   Value Decomposition Networks (VDN)
+    -   https://arxiv.org/abs/1706.05296
+-   QMIX
+    -   https://arxiv.org/abs/1803.11485
+-   Deep Recurrent Q-Network (DRQN)
+    -   https://arxiv.org/abs/1507.06527
+
+## Libraries Used for MARL
+-   PyTorch
+    -   https://pytorch.org/
+-   PettingZoo
+    -   https://pettingzoo.farama.org/index.html
+    -   https://arxiv.org/abs/2009.14471
+
+
+## Algorithm Used for Two-Stage RO Simulation
+-   The development of membrane fouling in full-scale RO processes (Chen et al., 2004)
+    -   https://doi.org/10.1016/j.memsci.2003.11.028
+    -   Implemented with Julia by the authors.
+
+-   Modeling and evaluating performance of full-scale reverse osmosis system in industrial water treatment plant (Jeong et al., 2021)
+    -   https://doi.org/10.1016/j.desal.2021.115289
+    -   Implemented with Julia, without foulant and cake layer formation modeling. 
+
+## Libraries and Language(s) Used for Two-Stage RO Simulation
+-   Julia
+    -   https://julialang.org/
+    -   Adopted for its high-speed and implementational advantage. Since tremendous evaluation of the RO model is necessary for reinforcement learning, a little speed-up of the RO model was a big advantage for us.
+-   JuliaCall
+    -   https://juliapy.github.io/PythonCall.jl/stable/juliacall/
+
+
+
 
 To install the necessary dependencies, run:
 
