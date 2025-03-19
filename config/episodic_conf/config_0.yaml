@@ -1,0 +1,18 @@
+PER_mode: UNIFORM
+days: 30
+description_experiment: 'Hard update (200), epsilon-greedy, UNIFORM, linear epsilon decay, revised reward function scale, QMIX.'
+device_number: 0
+action_policy: 'epsilon-greedy'
+epsilon_decay: 5000
+epsilon_start: 1.0
+max_episodes: 50000
+mode: training
+n_epoch: 1
+reward_weight:
+- 0.5
+- 0.5
+total_production: false
+train_frequency: 1
+tau: null
+batch_size: null
+pretrained_parameters: null

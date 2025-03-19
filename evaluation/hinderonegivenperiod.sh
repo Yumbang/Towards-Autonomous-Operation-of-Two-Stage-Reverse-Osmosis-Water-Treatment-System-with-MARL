@@ -1,0 +1,2 @@
+# python /home/ybang-eai/research/2024/ROMARL/ROMARL/evaluate_intended_failure.py --algorithm "QMIX" --exp_path "/home/ybang-eai/research/2024/ROMARL/ROMARL/parameters/11℃/QMIX/24.10.28.19.58"
+python /home/ybang-eai/research/2024/ROMARL/ROMARL/evaluate_intended_failure.py --algorithm "VDN" --exp_path "/home/ybang-eai/research/2024/ROMARL/ROMARL/parameters/11℃/VDN/24.09.15.09.36/24.09.15.09.36"
