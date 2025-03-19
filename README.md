@@ -34,7 +34,7 @@ The repository is organized as follows:
 ## Important Considerations
 
 ### About the codes:
--   There exists a number of hard-coded paths, algorithm selection, parameter selection, etc.
+-   There exists a number of **hard-coded paths**, **algorithm selection**, **parameter selection**, _etc_.
 -   Please customize the code to your need.
 -   Although there is only QMIX.py in algorithms/mixer directory, it contains more functionality than mere 'QMIX' implementation.
     -   ReplayBuffer, PrioritizedReplayBuffer are implemented. It may seem odd, but PrioritizedReplayBuffer was used as main replay buffer, only in UNIFORM mode (same function as vanilla ReplayBuffer). In addition, methods such as loss calculation are implemented in the class.
