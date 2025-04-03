@@ -1,8 +1,13 @@
-# Towards Autonomous Operation of Two-Stage Reverse Osmosis Water Treatment System with Multi-Agent Reinforcement Learning
+[GraphicalAbstract.pdf](https://github.com/user-attachments/files/19578144/GraphicalAbstract.pdf)# Towards Autonomous Operation of Two-Stage Reverse Osmosis Water Treatment System with Multi-Agent Reinforcement Learning
 
 ## Overview
 
 This repository contains the code for implementing and evaluating multi-agent reinforcement learning (MARL) algorithms for optimizing the operation of a two-stage reverse osmosis (RO) process. The goal is to develop control policies that can effectively manage the RO process under various operational conditions and disturbances, ensuring stable and efficient performance. Under review for submission to Desalination journal (https://www.sciencedirect.com/journal/desalination).
+
+## Graphical Abstract
+![GraphicalAbstract](https://github.com/user-attachments/assets/608ddaf7-ff39-4e18-aa3f-c72878d24ddf)
+
+
 
 ## Repository Structure
 
