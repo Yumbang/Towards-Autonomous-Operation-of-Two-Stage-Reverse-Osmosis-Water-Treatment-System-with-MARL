@@ -1,4 +1,4 @@
-[GraphicalAbstract.pdf](https://github.com/user-attachments/files/19578144/GraphicalAbstract.pdf)# Towards Autonomous Operation of Two-Stage Reverse Osmosis Water Treatment System with Multi-Agent Reinforcement Learning
+# Towards Autonomous Operation of Two-Stage Reverse Osmosis Water Treatment System with Multi-Agent Reinforcement Learning
 
 ## Overview
 
