@@ -56,7 +56,7 @@ The repository is organized as follows:
 -   Deep Recurrent Q-Network (DRQN)
     -   https://arxiv.org/abs/1507.06527
 
-## Libraries Used for MARL
+### Libraries Used for MARL
 -   PyTorch
     -   https://pytorch.org/
 -   PettingZoo
@@ -73,7 +73,7 @@ The repository is organized as follows:
     -   https://doi.org/10.1016/j.desal.2021.115289
     -   Implemented with Julia, without foulant and cake layer formation modeling. 
 
-## Libraries and Language(s) Used for Two-Stage RO Simulation
+### Libraries and Language(s) Used for Two-Stage RO Simulation
 -   Julia
     -   https://julialang.org/
     -   Adopted for its high-speed and implementational advantage. Since tremendous evaluation of the RO model is necessary for reinforcement learning, a little speed-up of the RO model was a big advantage for us.
