@@ -7,7 +7,10 @@ This repository contains the code for implementing and evaluating multi-agent re
 ## Graphical Abstract
 ![GraphicalAbstract](https://github.com/user-attachments/assets/608ddaf7-ff39-4e18-aa3f-c72878d24ddf)
 
+## Abstract
+Reverse osmosis (RO) is a widely used water treatment technology employing semipermeable membranes and pressure to remove impurities from water. Two-stage RO systems are designed primarily to enhance recovery rates by processing the feed water in two sequential stages. However, optimizing such systems is challenging because of the complex interactions between stages, increasing need for autonomous control based on reinforcement learning (RL) methods. We applied multiagent reinforcement learning (MARL) to optimize a two-stage RO process by controlling the feed flow rate, high-pressure pump pressure, and inter-stage boosting pump pressure. Two MARL algorithms—Value Decomposition Network (VDN) and QMIX—and one single-agent RL algorithm, Deep Recurrent Q-Network (DRQN), were used to minimize specific energy consumption and accomplish high water production. After 50,000 training episodes, although all of them succeeded in training, the two MARL algorithms showed higher performance and robustness than those by the single-agent RL algorithm. This study highlighted the potential and advantages of MARL for the autonomous operation of a two-stage RO process.
 
+Keywords: Water treatment, reverse osmosis, multi-agent reinforcement learning, artificial intelligence
 
 ## Repository Structure
 
