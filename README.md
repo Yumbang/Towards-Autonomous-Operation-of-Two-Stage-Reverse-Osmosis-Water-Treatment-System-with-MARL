@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the code for implementing and evaluating multi-agent reinforcement learning (MARL) algorithms for optimizing the operation of a two-stage reverse osmosis (RO) process. The goal is to develop control policies that can effectively manage the RO process under various operational conditions and disturbances, ensuring stable and efficient performance. Under review for submission to Desalination journal (https://www.sciencedirect.com/journal/desalination).
+This repository contains the code for implementing and evaluating multi-agent reinforcement learning (MARL) algorithms for optimizing the operation of a two-stage reverse osmosis (RO) process. The goal is to develop control policies that can effectively manage the RO process under various operational conditions and disturbances, ensuring stable and efficient performance. Published in Desalination journal ([https://www.sciencedirect.com/journal/desalination](https://doi.org/10.1016/j.desal.2025.118870)).
 
 ## Graphical Abstract
 ![GraphicalAbstract](https://github.com/user-attachments/assets/608ddaf7-ff39-4e18-aa3f-c72878d24ddf)
